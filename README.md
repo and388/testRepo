@@ -1,1 +1,1 @@
-this is just a test with github
+I'm following the tutorial from w3schools , these are just small tests 
