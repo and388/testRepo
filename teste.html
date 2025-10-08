@@ -6,48 +6,95 @@
     <title>Website com Menu Verde</title>
     <style>
         body {
-            margin: 0;
+            margin: 0px;
             font-family: Arial, sans-serif;
         }
         header {
-            background-color: aliceblue;
+            display:flex;
+            justify-content: space-between;
+            background-image: url('imagens/fundo_header.jpg');
+            margin: -20px;
+            color:white;
+            height:70px;            
 
         }
         ul {
             display:flex;
             list-style-type: none;
+            justify-content:space-around;
        ;
         }
         ul li {
-            min-width:50px;
-            max-width:200px;
-            padding-inline: 200px;
+            align-items: center; 
+        }
+        ul li div{
+            display:flex;
+            height: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            padding-inline: 15px;
+            
+            font-size: 15px;
+             border:2px solid transparent ;
+             border-radius:20px;
+            
+            
+
+        }
+        ul li div a:link {
+            color: white;
+             text-decoration: none;
+        }
+        ul li div:hover {
+           
+            border: 3px solid rgb(255, 255, 255);
+            font-weight: 300;
+            transition: ease-in-out 0.5s;
+
+        }
+        #relogio {
+            display: flex;
+            width:200px;
+            border: 3px dotted red;
+            align-items: center;
+            align-content: center;
         }
       
     </style>
+
+    <script>
+        const getHora = () => {
+            let tag = document.getElementById('relogio')
+            tag.innerText='horaatual'
+        }
+    </script>
 </head>
 <body>
    <header> 
        <ul>
            <li>
-                <div>
-                    <img src="imagens/emailImg.jpg" alt="email" width="30px" height="30px">
-                    <p>Email</p>
+                <div  style="flex-grow: 10">
+                    <img src="imagens/emailImg.png" alt="email" width="30px" height="30px">
+                     <a href="mailto:andrecarvalho388@gmail.com"> Andrecarvalho388@gmail.com</a>
                 </div>
             </li>
             <li>
-                <div>
-                    <img src="imagens/linkendImg.jpg" alt="Linkedin" width="30px" height="30px">
+                <div  style="flex-grow: 1">
+                    <img src="imagens/linkendImg.png" alt="Linkedin" width="30px" height="30px">
                     <p>linkedin</p>
                 </div>
             </li>
             <li>
-                <div>
-                    <img src="imagens/githubImg.jpg" alt="github" width="30px" height="30px">
-                    <p>Email</p>
+                <div   style="flex-grow: 1">
+                    <img src="imagens/githubImg.png" alt="github" width="30px" height="30px">
+                    <p>Github</p>
                 </div>
             </li>
        </ul>
+       <div id="relogio"><p>Hora</p></div>
    </header>
 </body>
 </html>
