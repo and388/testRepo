@@ -1,1 +1,1 @@
-I'm following the tutorial from w3schools , these are just small tests 
+this is a repositore for record all the changes I have been making on my own website curriculum
