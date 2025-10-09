@@ -66,6 +66,40 @@
             justify-content: center;
             padding-top: 10px;
         }
+
+        #container {
+            margin-top: 15px;
+            display:flex;
+            flex-direction:column;
+             background-color:blueviolet;
+             height: 2000px;
+             width: 100%;
+        }
+        
+        #container-left {
+            width:60%;
+            border: 10px dotted red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #divImage {
+            border-radius:50%;
+            border: 3px solid white;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:220px;
+            height:220px;
+            overflow: hidden;
+        }
+        #perfilImage {
+            width:200px;
+            height:320px;
+            display:block;
+        }
       
     </style>
 
@@ -110,5 +144,15 @@
        </ul>
        <div id="relogio"><p>Hora</p></div>
    </header>
+   <div id="container">
+          <div id="container-left">
+                <div id="divImage">
+                     <img id="perfilImage" src="./imagens/perfil.jpg">
+                </di>
+           </div>
+           <div id="menu-direita">
+
+           </div>
+    </div>
 </body>
 </html>
