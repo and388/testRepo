@@ -62,14 +62,25 @@ ul li div:hover {
 }
 
 .scroll{
+    background-color: black;
     position: relative;
-    max-width:700px;
+    width:100%;
     margin-inline:auto;
 
 }
 .scroll_container {
     display:flex;
+    justify-content: center;
+    gap:10px;
     
+}
+.scroll_item {
+    background-color: rgb(177, 117, 117);
+    color:white;
+    font-weight: 200;
+    align-items: center;
+    padding:20px;
+    white-space: nowrap;
 }
 
 #container {
