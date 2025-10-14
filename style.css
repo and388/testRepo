@@ -78,6 +78,7 @@ ul li div:hover {
     gap:10px;
     border: 3px dotted red;
     flex-wrap: nowrap;
+    animation: scroll 10s linear infinite; 
     
 }
 .scroll_item {
@@ -88,6 +89,14 @@ ul li div:hover {
     padding: 10px 20px;
     white-space: nowrap;
     border-radius: 5px;
+}
+
+@keyframes scroll {
+    from {
+        translate:0;
+    } to {
+        translate:-50%
+    }
 }
 
 #container {
