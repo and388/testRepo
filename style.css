@@ -23,6 +23,12 @@ header {
 }
 #menu li {
     align-items: center; 
+    
+}
+#menu li a{
+    color:white;
+    display:flex;
+    align-items: center;
 }
 ul li div{
     display:flex;
